@@ -13,7 +13,7 @@ Byrja að setja breytu x og y sem 1 sem táknar staðsetningu á kortinu
 Prenta út “Victory!”
 '''
 
-x, y = 1
+x, y = 1, 1
 
 while x != 3 or y != 1:
     if x == 1 and y == 1:
@@ -55,3 +55,8 @@ while x != 3 or y != 1:
                 x -= 1
             else:
                 x += 1
+            break
+        else:
+            print("Not a valid direction!")
+
+print("Victory!")
