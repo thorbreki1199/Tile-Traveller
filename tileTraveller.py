@@ -38,7 +38,7 @@ while x != 3 or y != 1:
         answer_string = "ws"
         print("You can travel: (S)outh or (W)est.")
     elif x == 3 and y == 2:
-        answer_string = "ns"
+        answer_string = "sn"
         print("You can travel: (N)orth or (S)outh")
     else:
         break
