@@ -15,9 +15,7 @@ Byrja að setja breytu x og y sem 1 sem táknar staðsetningu á kortinu
 Prenta út “Victory!”
 '''
 
-x, y = 1, 1
-
-while x != 3 or y != 1:
+def check_where_you_can_go(x, y):
     if x == 1 and y == 1:
         answer_string = "n"
         print("You can travel: (N)orth.")
@@ -43,8 +41,10 @@ while x != 3 or y != 1:
         answer_string = "sn"
         print("You can travel: (N)orth or (S)outh.")
     else:
-        break
-    
+        return False
+    return answer_string
+
+def input_and_change_x(x, y, answer_string):
     while True:
         the_input = input("Direction: ").lower()
 
@@ -57,8 +57,14 @@ while x != 3 or y != 1:
                 x -= 1
             else:
                 x += 1
-            break
         else:
             print("Not a valid direction!")
+        return x, y
+
+x, y = 1, 1
+
+while x != 3 or y != 1:
+
+    
 
 print("Victory!")
