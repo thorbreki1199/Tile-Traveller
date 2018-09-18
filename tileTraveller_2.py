@@ -41,10 +41,10 @@ def check_where_you_can_go(x, y):
         answer_string = "sn"
         print("You can travel: (N)orth or (S)outh.")
     else:
-        return False
+        answer_string = ""
     return answer_string
 
-def input_and_change_x(x, y, answer_string):
+def input_and_change(x, y, answer_string):
     while True:
         the_input = input("Direction: ").lower()
 
@@ -64,7 +64,8 @@ def input_and_change_x(x, y, answer_string):
 x, y = 1, 1
 
 while x != 3 or y != 1:
-
+    answer_string = check_where_you_can_go(x, y)
+    x, y = input_and_change(x, y, answer_string)
     
 
 print("Victory!")
