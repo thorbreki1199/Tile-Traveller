@@ -1,6 +1,22 @@
 '''
 https://github.com/thorbreki1199/Tile-Traveller/commits/master
 
+1. Which implementation was easier and why?
+    Mér fannst mun auðveldara að setja upp kóðann með functions vegna þess að ég þurfti ekki að skrifa sama kóðann aftur og aftur.
+    Einnig var bara auðveldara að setja upp kóðann svona þar sem þegar ég var búinn að setja upp the functions rétt þá þurfti ég 
+    ekkert að pæla í þeim lengur.
+
+2. Which implementation is more readable and why?
+    Implementation 2 er mun læsilegri þar sem þú þarft ekki að pæla í hvað gerist í the functions, en ef þú vilt þá máttu það. Einnig er
+    the structure á kóðanum betri.
+
+3. Which problems in the first implementations were you able to solve with the latter
+implementation?
+    The only problems that we fixed were the readability of the code. The code in the first implementation was not good but using
+    functions made it much more readable right of the bat.
+
+'''
+'''
 Byrja að setja breytu x og y sem 1 sem táknar staðsetningu á kortinu
 
 Á meðan spilari er ekki á reit 3,1:
